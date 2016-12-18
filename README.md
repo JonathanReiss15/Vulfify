@@ -1,5 +1,5 @@
-## Vulfify /// go VULF yourself /// a web app
-HTML/JS app to "Vulfify" someone using their image 
+# Vulfify /// go VULF yourself /// a web app
+
 
 ## Background
 [Vulfpeck](http://vulfpeck.com) is an American funk band known for their eccentric projects that are often the brainchild of bandleader Jack Stratton.  Their projects also emphasize collaboration with other artists (See [Antwaun Stanley](https://www.youtube.com/watch?v=TiiWR6436Eg)) and "entities" (see [Goodhertz](https://goodhertz.co/vulf-comp) and [OH no Type Co](https://medium.com/@ohno/the-process-of-vulf-mono-e29b3971a014#.9vmpcsby1)).  
