@@ -9,7 +9,7 @@ Stratton of Vulfpeck even collaborated on the web app [Funklet](http://funklet.c
 ## What we want to build
 The idea to create an app to "vulfify" oneselfe came from browsing the Facebook fangroup the ["Vulfpack"](https://www.facebook.com/groups/1668975940044050/).  One user posted a request for people to post their "vulf" images that mimic the thumbnails Vulf creates for their videos.
 
-These images are best described as identical newspaper clippings on a 
+These images are best described as newspaper clippings (the subject---we'll just call it the clipping for future reference) on a colored background
 
 Example img: 
 
@@ -23,9 +23,10 @@ Repeated image:
 
 ### Created in PHX with <3 
 Collaborators: 
-@jonathanreiss15
-@seb-patron
+[@jonathanreiss15](http://www.jonnyreiss.com)
 
-#### blogs on the creatoion to come soon
+[@seb-patron](https://github.com/seb-patron)
+
+#### blogs on the creation to come soon
  
 
