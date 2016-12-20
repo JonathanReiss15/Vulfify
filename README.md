@@ -1,5 +1,7 @@
 # Vulfify /// go VULF yourself /// a web app
 
+## Mockup
+![1st vulfify mockup](https://github.com/JonathanReiss15/Vulfify/blob/master/img/vulfifymockup1.png?raw=true)
 
 ## Background
 [Vulfpeck](http://vulfpeck.com) is an American funk band known for their eccentric projects that are often the brainchild of bandleader Jack Stratton.  Their projects also emphasize collaboration with other artists (See [Antwaun Stanley](https://www.youtube.com/watch?v=TiiWR6436Eg)) and "entities" (see [Goodhertz](https://goodhertz.co/vulf-comp) and [OH no Type Co](https://medium.com/@ohno/the-process-of-vulf-mono-e29b3971a014#.9vmpcsby1)).  
@@ -23,6 +25,7 @@ Repeated image:
 
 ### Created in PHX with <3 
 Collaborators: 
+
 [@jonathanreiss15](http://www.jonnyreiss.com)
 
 [@seb-patron](https://github.com/seb-patron)
