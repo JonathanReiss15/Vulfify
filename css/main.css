@@ -1,0 +1,87 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+Color Palette
+
+*/
+body {
+  background-color: #D98F84;
+}
+
+.toolbox {
+  background-color: #D85961;
+  /*height: 100%;*/
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.header {
+  font-family: Helvetica-Oblique;
+  font-size: 80px;
+  color: #FFFFFF;
+  letter-spacing: 5px;
+}
+
+h3 {
+  /* Repeat: */
+font-family: HelveticaNeue;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0px;
+}
+
+.button {
+  /* Rectangle 4: */
+  background: #B62230;
+  border: 3px solid #FFFFFF;
+  border-radius: 6px;
+  /* /// VULFIFY ME: */
+  font-family: HelveticaNeue-Italic;
+  font-size: 36px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  /*text-align: center;*/
+  margin:auto;
+  display:block;
+}
+
+#photo {
+  margin-top: 20px;
+}
+
+#photo h3 {
+  margin-top: 0px;
+}
+
+#photosquare {
+  /* Rectangle 5: */
+width: 155px;
+height: 155px;
+background: #F0D3CE;
+border: 3px solid #FFFFFF;
+border-radius: 6px;
+float: right;
+text-align: center;
+}
+
+.camera {
+    margin-top: 56px;
+}
+
+.pseudofooter {
+  text-align: center;
+  color: white;
+}
+
+.preview img {
+  display: block;
+  margin: auto;
+}
