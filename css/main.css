@@ -8,7 +8,9 @@ body {
   background-color: #D98F84;
 }
 
-/*Toolbox CSS*/
+/* =======================================
+   Toolbox CSS
+   ======================================= */
 .toolbox {
   background-color: #D85961;
   /*height: 100%;*/
@@ -57,14 +59,13 @@ h3 {
 }
 
 #photosquare {
-  /* Rectangle 5: */
-width: 100px;
-height: 100px;
-background: #F0D3CE;
-border: 3px solid #FFFFFF;
-border-radius: 6px;
-float: right;
-text-align: center;
+  width: 100px;
+  height: 100px;
+  background: #F0D3CE;
+  border: 3px solid #FFFFFF;
+  border-radius: 6px;
+  float: right;
+  text-align: center;
 }
 
 .camera {
@@ -88,7 +89,7 @@ text-align: center;
   margin: auto;
 }
 
-/*Palette COlors*/
+/*Palette Colors*/
 #darkblue {
   background-color: #9CBFDC;
 }
@@ -128,7 +129,9 @@ text-align: center;
 }
 
 
-/*Slider.css*/
+/* =================================
+   Slider.css
+   ================================= */
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;

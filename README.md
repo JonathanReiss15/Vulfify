@@ -13,7 +13,7 @@ The idea to create an app to "vulfify" oneselfe came from browsing the Facebook 
 
 These images are best described as newspaper clippings (the subject---we'll just call it the clipping for future reference) on a colored background
 
-Example img: 
+Example img:
 
 ![thumbnail from Vulfpeck's video for "1612"](https://raw.githubusercontent.com/JonathanReiss15/Vulfify/master/DOCS/img/1612.jpg)
 
@@ -23,13 +23,11 @@ Repeated image:
 
 ![thumbnail for Fugue State that shows the repeated clipping overlapping](https://github.com/JonathanReiss15/Vulfify/blob/master/DOCS/img/repeatedexample.jpg?raw=true)
 
-### Created in PHX with <3 
-Collaborators: 
+### Created in PHX with <3
+Collaborators:
 
 [@jonathanreiss15](http://www.jonnyreiss.com)
 
 [@seb-patron](https://github.com/seb-patron)
 
 #### blogs on the creation to come soon
- 
-
