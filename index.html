@@ -50,6 +50,8 @@ https://github.com/JonathanReiss15/Vulfify
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
     <script src="https://use.fontawesome.com/f0552b4286.js"></script>
+    <!--  Using CDN for fabric.js (should we switch at some point?) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.2/fabric.min.js"></script>
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -60,7 +62,32 @@ https://github.com/JonathanReiss15/Vulfify
       <div class="col-md-8 content">
         <div class="preview">
           <!-- Output JPG to here -->
-          <img src="img/antwaun.jpg">
+          <!-- <img src="img/antwaun.jpg"> -->
+          <canvas id="canvas" width="800" height="550"></canvas>
+          <!-- <img src="img/transp_antwaun.png" id="transp_antwaun" style="display:none;"> -->
+          <!-- <script>
+            var bckgcolor = '#9CBFDC';
+
+            var canvas = new fabric.Canvas('canvas', {
+              backgroundColor: bckgcolor
+            });
+
+            fabric.Image.fromURL('img/transp_antwaun.png', function(img) {
+              var img1 = img.scale(0.8).set({ left: 100, top: 100 });
+
+              fabric.Image.fromURL('img/transp_antwaun.png', function(img) {
+                var img2 = img.scale(0.8).set({ left: 125, top: 100 });
+
+                fabric.Image.fromURL('img/transp_antwaun.png', function(img) {
+                  var img3 = img.scale(0.8).set({ left: 150, top: 100 });
+
+                  canvas.add(new fabric.Group([ img1, img2, img3]))
+                });
+              });
+            });
+
+          </script> -->
+
         </div>
         <div class="pseudofooter">
           <h4>Made with ♥ in PHX &#8226;
@@ -118,9 +145,9 @@ https://github.com/JonathanReiss15/Vulfify
 
 
         <div id="repeat">
-          <h3>Repeat</h3>
+          <h3>Repeat: <span id="slider_value"></span></h3>
           <div class="rangewidth">
-            <input type="range" min="1" max="8" step="1">
+            <input type="range" id="slider" min="1" max="8" step="1">
           </div>
         </div>
 

@@ -10,6 +10,29 @@ body {
   background-color: #D98F84;
 }
 
+/* =========================================
+                Preview
+   ========================================= */
+
+.preview {
+  margin-top: 10px;
+}
+
+.pseudofooter {
+  text-align: center;
+  color: white;
+}
+
+.preview img {
+  display: block;
+  margin: auto;
+}
+
+.canvas-container {
+  margin: 0 auto;
+}
+
+
 /* =======================================
               Toolbox CSS
    ======================================= */
@@ -152,16 +175,7 @@ h3 {
 #colorrow {
     margin-bottom: 10px;
 }
-/*Preview*/
-.pseudofooter {
-  text-align: center;
-  color: white;
-}
 
-.preview img {
-  display: block;
-  margin: auto;
-}
 
 
 /* =================================
