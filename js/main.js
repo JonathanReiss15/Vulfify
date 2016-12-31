@@ -54,20 +54,51 @@ $(document).on('input', '#slider', function() {
 
 var path = 'img/transp_antwaun.png';
 
-fabric.Image.fromURL(path, function(img) {
-  var img1 = img.scale(0.8).set({ left: 100, top: 100 });
 
+// fabric.Image.fromURL(path, function(img) {
+//   var img = img.scale(0.8).set({ left: 100, top: 100 });
+//   canvas.add(img);
+//
+// });
+//
+// fabric.Image.fromURL(path, function(img) {
+//   var img2 = img.scale(0.8);
+//   // .set({ left: 125, top: 100 })
+//   var x = 100;
+//   img2.set("top", 100);
+//   img2.set("left", x+15);
+//   canvas.add(img2);
+// 
+// });
+
+for (var i = 0; i < 3; i++) {
   fabric.Image.fromURL(path, function(img) {
-    var img2 = img.scale(0.8).set({ left: 125, top: 100 });
-
-    fabric.Image.fromURL(path, function(img) {
-      var img3 = img.scale(0.8).set({ left: 150, top: 100 });
-
-      // repeats all together form a repeatGroup
-      var repeatGroup = new fabric.Group([ img1, img2, img3]);
-      repeatGroup.selectable = false;
-
-      canvas.add(repeatGroup);
-    });
+    var x = 100 + (15 * i);
+    // console.log("The x value is:" + x);
+    var img = img.scale(0.8);
+    img.set("left", x);
+    alert("X value is" + x);
+    img.set("top", 100);
+    img.selectable = false;
+    canvas.add(img);
   });
-});
+}
+
+
+
+// hardcoded for 3 images
+
+//   fabric.Image.fromURL(path, function(img) {
+//     var img2 = img.scale(0.8).set({ left: 125, top: 100 });
+//
+//     fabric.Image.fromURL(path, function(img) {
+//       var img3 = img.scale(0.8).set({ left: 150, top: 100 });
+//
+//       // repeats all together form a repeatGroup
+//       var repeatGroup = new fabric.Group([img, img2, img3]);
+//       repeatGroup.selectable = false;
+//
+//       canvas.add(repeatGroup);
+//     });
+//   });
+// });
