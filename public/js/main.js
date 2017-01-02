@@ -3,6 +3,8 @@
 
 // color palette listeners
 
+console.log('Is main.js running?');
+
 $("#darkblue").click(function() {
     $("body").css("background-color","#9CBFDC");
     canvas.backgroundColor="#9CBFDC";
@@ -39,68 +41,53 @@ $("#darkred").click(function() {
     canvas.renderAll();
 });
 
-
 var canvas = new fabric.Canvas('canvas', {
   backgroundColor: '#D98F84',
 });
 
-// input range listener
-$(document).on('input', '#slider', function() {
-    $('#slider_value').html( $(this).val());
+//on page load inits base image
+window.onload = init;
 
-});
-
-// hardcoded for 3, create some sort of for loop that pulls from input range?
-
-var path = 'img/transp_antwaun.png';
-
-
-// fabric.Image.fromURL(path, function(img) {
-//   var img = img.scale(0.8).set({ left: 100, top: 100 });
-//   canvas.add(img);
-//
-// });
-//
-// fabric.Image.fromURL(path, function(img) {
-//   var img2 = img.scale(0.8);
-//   // .set({ left: 125, top: 100 })
-//   var x = 100;
-//   img2.set("top", 100);
-//   img2.set("left", x+15);
-//   canvas.add(img2);
-//
-// });
-
-fabric.Image.fromURL(path, function(img) {
-        // let x = varX;
-    for (var i = 0; i < 3; i++) {
-        var x = 100 + (15 * i);
-        console.log("The x value is:" + x);
+function init() {
+    console.log('test');
+    fabric.Image.fromURL(path, function(img) {
+        var x = 100;
         var img = img.scale(0.8);
         img.set("left", x);
-        alert("X value is" + x);
+        // alert("X value is" + x);
         img.set("top", 100);
-        img.selectable = true;
+        img.selectable = false;
         canvas.add(img);
+    });
+}
+
+
+const slider__value = document.querySelector("#slider");
+
+slider__value.addEventListener('change', updateImages);
+
+var path = './img/transp_antwaun.png';
+
+//Adds image to canvas and repeats enterred amount
+function updateImages() {
+    canvas.clear();
+    const imgArray = [];
+    for (var i = 0; i < this.value; i++) {
+        imgArray.push(path);
     }
-});
 
+    imgArray.forEach((image, index) => {
+        fabric.Image.fromURL(image, function(img) {
+            var x = 100 + (15 * index);
+            console.log("index value is: " + index);
+            var img = img.scale(0.8);
+            img.set("left", x);
+            // alert("X value is" + x);
+            img.set("top", 100);
+            img.selectable = false;
+            canvas.add(img);
+        });
+    });
+}
 
-
-
-// hardcoded for 3 images
-
-//   fabric.Image.fromURL(path, function(img) {
-//     var img2 = img.scale(0.8).set({ left: 125, top: 100 });
-//
-//     fabric.Image.fromURL(path, function(img) {
-//       var img3 = img.scale(0.8).set({ left: 150, top: 100 });
-//
-//       // repeats all together form a repeatGroup
-//       var repeatGroup = new fabric.Group([img, img2, img3]);
-//       repeatGroup.selectable = false;
-//
-//       canvas.add(repeatGroup);
-//     });
-//   });
-// });
+// readd download image shit
