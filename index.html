@@ -96,106 +96,111 @@ https://github.com/JonathanReiss15/Vulfify
         </div>
       </div>
 
-      <!-- Toolbox -->
-      <div class="col-md-4 toolbox">
-        <div>
-          <h1 class="text-center header">
-            Vulfify ///
-          </h1>
-        </div>
-
-        <div id="photo">
-          <div class="row">
-
-            <div class="col-md-6">
-              <h3>Photo</h3>
-            </div>
-
-            <div class="col-md-6 photo">
-              <div id="photosquare">
-                <a href="#cameraModal" class="camera" data-toggle="modal">
-                  <div class="camera">
-                    <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-
+      <div class="toolboxwrapper">
+        <!-- Toolbox -->
+        <div class="col-md-4 toolbox">
+          <div>
+            <h1 class="text-center header">
+              Vulfify ///
+            </h1>
           </div>
-        </div>
 
-        <div id="cameraModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h3>Take your picture</h3>
-                        </div>
-                        <div class="modal-body">
-                          <h3>Hello World!</h3>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="modal-vulf-button" data-dismiss="modal">Close</button>
-                            <button type="button" class="modal-vulf-button" data-dismiss="modal">Vulfify ME ///</button>
-
-                        </div>
-                    </div>
-                </div>
-        </div>
-
-
-        <div id="repeat">
-          <h3>Repeat: <span id="slider_value"></span></h3>
-          <div class="rangewidth">
-            <input type="range" id="slider" min="1" max="8" step="1">
-          </div>
-        </div>
-
-        <div id="color">
-          <!-- Clicking changes background color of body as well as canvas -->
-          <h3>Color</h3>
-          <div class="colorcontainer">
-
-            <div class="row" id="colorrow">
-              <div class="col-md-4 col-xs-4">
-                <div class="palettebox" id="darkblue"></div>
-              </div>
-
-              <div class="col-md-4 col-xs-4">
-                <div class="palettebox" id="medred"></div>
-              </div>
-
-              <div class="col-md-4 col-xs-4">
-                <div class="palettebox" id="lightblue"></div>
-              </div>
-            </div>
-
+          <div id="photo">
             <div class="row">
-              <div class="col-md-4 col-xs-4">
-                <div class="palettebox" id="lightred"></div>
+
+              <div class="col-md-6">
+                <h3>Photo</h3>
               </div>
 
-              <div class="col-md-4 col-xs-4">
-                <div class="palettebox" id="lightgrey"></div>
+              <div class="col-md-6 photo">
+                <div id="photosquare">
+                  <a href="#cameraModal" class="camera" data-toggle="modal">
+                    <div class="camera">
+                      <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </div>
               </div>
 
-              <div class="col-md-4 col-xs-4">
-                <div class="palettebox" id="darkred"></div>
-              </div>
             </div>
+          </div>
 
+          <div id="cameraModal" class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h3>Take your picture</h3>
+                          </div>
+                          <div class="modal-body">
+                            <h3>Hello World!</h3>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="modal-vulf-button" data-dismiss="modal">Close</button>
+                              <button type="button" class="modal-vulf-button" data-dismiss="modal">Vulfify ME ///</button>
+
+                          </div>
+                      </div>
+                  </div>
           </div>
 
 
+          <div id="repeat">
+            <h3>Repeat: <span id="slider_value"></span></h3>
+            <div class="rangewidth">
+              <input type="range" id="slider" min="1" max="8" step="1">
+            </div>
+          </div>
+
+          <div id="color">
+            <!-- Clicking changes background color of body as well as canvas -->
+            <h3>Color</h3>
+            <div class="colorcontainer">
+
+              <div class="row" id="colorrow">
+                <div class="col-md-4 col-xs-4">
+                  <div class="palettebox" id="darkblue"></div>
+                </div>
+
+                <div class="col-md-4 col-xs-4">
+                  <div class="palettebox" id="medred"></div>
+                </div>
+
+                <div class="col-md-4 col-xs-4">
+                  <div class="palettebox" id="lightblue"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 col-xs-4">
+                  <div class="palettebox" id="lightred"></div>
+                </div>
+
+                <div class="col-md-4 col-xs-4">
+                  <div class="palettebox" id="lightgrey"></div>
+                </div>
+
+                <div class="col-md-4 col-xs-4">
+                  <div class="palettebox" id="darkred"></div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <!-- Click generates download? Is it even necessary? -->
+          <input type="button" class="button" value="/// VULFIFY ME">
+
         </div>
 
-        <!-- Click generates download? Is it even necessary? -->
-        <input type="button" class="button" value="/// VULFIFY ME">
+        <div id="bottom"></div>
 
       </div>
 
 <!-- /container -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>

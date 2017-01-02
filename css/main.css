@@ -10,6 +10,12 @@ body {
   background-color: #D98F84;
 }
 
+.content,
+.toolbox {
+  height: 100%;
+}
+
+
 /* =========================================
                 Preview
    ========================================= */
@@ -36,6 +42,15 @@ body {
 /* =======================================
               Toolbox CSS
    ======================================= */
+#toolboxwrapper {
+  overflow: hidden;
+  height: 1024px;
+}
+#bottom {
+  height: 100%;
+  background-color: #D85961;
+}
+
 .toolbox {
   background-color: #D85961;
   /*height: 100%;*/

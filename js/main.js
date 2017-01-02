@@ -68,21 +68,23 @@ var path = 'img/transp_antwaun.png';
 //   img2.set("top", 100);
 //   img2.set("left", x+15);
 //   canvas.add(img2);
-// 
+//
 // });
 
-for (var i = 0; i < 3; i++) {
-  fabric.Image.fromURL(path, function(img) {
-    var x = 100 + (15 * i);
-    // console.log("The x value is:" + x);
-    var img = img.scale(0.8);
-    img.set("left", x);
-    alert("X value is" + x);
-    img.set("top", 100);
-    img.selectable = false;
-    canvas.add(img);
-  });
-}
+fabric.Image.fromURL(path, function(img) {
+        // let x = varX;
+    for (var i = 0; i < 3; i++) {
+        var x = 100 + (15 * i);
+        console.log("The x value is:" + x);
+        var img = img.scale(0.8);
+        img.set("left", x);
+        alert("X value is" + x);
+        img.set("top", 100);
+        img.selectable = true;
+        canvas.add(img);
+    }
+});
+
 
 
 
