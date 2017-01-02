@@ -64,29 +64,7 @@ https://github.com/JonathanReiss15/Vulfify
           <!-- Output JPG to here -->
           <!-- <img src="img/antwaun.jpg"> -->
           <canvas id="canvas" width="800" height="550"></canvas>
-          <!-- <img src="img/transp_antwaun.png" id="transp_antwaun" style="display:none;"> -->
-          <!-- <script>
-            var bckgcolor = '#9CBFDC';
 
-            var canvas = new fabric.Canvas('canvas', {
-              backgroundColor: bckgcolor
-            });
-
-            fabric.Image.fromURL('img/transp_antwaun.png', function(img) {
-              var img1 = img.scale(0.8).set({ left: 100, top: 100 });
-
-              fabric.Image.fromURL('img/transp_antwaun.png', function(img) {
-                var img2 = img.scale(0.8).set({ left: 125, top: 100 });
-
-                fabric.Image.fromURL('img/transp_antwaun.png', function(img) {
-                  var img3 = img.scale(0.8).set({ left: 150, top: 100 });
-
-                  canvas.add(new fabric.Group([ img1, img2, img3]))
-                });
-              });
-            });
-
-          </script> -->
 
         </div>
         <div class="pseudofooter">
@@ -133,11 +111,13 @@ https://github.com/JonathanReiss15/Vulfify
                               <h3>Take your picture</h3>
                           </div>
                           <div class="modal-body">
-                            <h3>Hello World!</h3>
+                            <video autoplay></video>
+                          	<!-- <canvas></canvas><br> -->
+
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="modal-vulf-button" data-dismiss="modal">Close</button>
-                              <button type="button" class="modal-vulf-button" data-dismiss="modal">Vulfify ME ///</button>
+                              <button id="capture" type="button" class="modal-vulf-button" data-dismiss="modal">Vulfify ME ///</button>
 
                           </div>
                       </div>
@@ -148,7 +128,7 @@ https://github.com/JonathanReiss15/Vulfify
           <div id="repeat">
             <h3>Repeat: <span id="slider_value"></span></h3>
             <div class="rangewidth">
-              <input type="range" id="slider" min="1" max="8" step="1">
+              <input type="range" id="slider" min="1" max="8" step="1" value="1">
             </div>
           </div>
 
@@ -191,7 +171,10 @@ https://github.com/JonathanReiss15/Vulfify
           </div>
 
           <!-- Click generates download? Is it even necessary? -->
-          <input type="button" class="button" value="/// VULFIFY ME">
+          <div align="center">
+            <a href="#" id="downloadLnk">Download me plz</a>  
+          </div>
+          <!-- <input type="button" class="button" value="/// VULFIFY ME" id="downloadLnk" href="#"> -->
 
         </div>
 
@@ -200,12 +183,14 @@ https://github.com/JonathanReiss15/Vulfify
       </div>
 
 <!-- /container -->
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
 
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
+    <!-- <script src="js/camera.js"></script> -->
+
 
     <!-- Google Analytics -->
     <!--

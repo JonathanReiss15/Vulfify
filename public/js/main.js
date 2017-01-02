@@ -91,3 +91,8 @@ function updateImages() {
 }
 
 // readd download image shit
+
+document.querySelector('#downloadLnk').addEventListener('click', function (event) {
+    var dt = canvas.toDataURL('image/jpeg');
+    this.href = dt;
+});
