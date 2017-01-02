@@ -1,0 +1,25 @@
+{
+  "name": "vulfify",
+  "version": "1.0.0",
+  "description": "web app to vulfify oneself like a member of vulfpeck",
+  "main": "run.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonathanReiss15/Vulfify.git"
+  },
+  "author": "Jonathan Reiss <me@jonnyreiss.com> (http://jonnyreiss.com)",
+  "contributors": [
+    {
+      "name": "Sebastian Patron",
+      "url": "https://github.com/seb-patron"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonathanReiss15/Vulfify/issues"
+  },
+  "homepage": "https://github.com/JonathanReiss15/Vulfify#readme",
+  "dependencies": {
+    "node-static": "^0.7.9"
+  }
+}
