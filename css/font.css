@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Vulf Mono Light';
+    src:    url('../fonts/Vulf_Mono-Light_web.eot');
+    src:    url('../fonts/Vulf_Mono-Light_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Light_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Light_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Light_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Light_web.svg#svgFontName') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Light Italic';
+    src:    url('../fonts/Vulf_Mono-Light_Italic_web.eot');
+    src:    url('../fonts/Vulf_Mono-Light_Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Light_Italic_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Light_Italic_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Light_Italic_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Light_Italic_web.svg#svgFontName') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Regular';
+    src:    url('../fonts/Vulf_Mono-Regular_web.eot');
+    src:    url('../fonts/Vulf_Mono-Regular_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Regular_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Regular_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Regular_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Regular_web.svg#svgFontName') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Italic';
+    src:    url('../fonts/Vulf_Mono-Italic_web.eot');
+    src:    url('../fonts/Vulf_Mono-Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Italic_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Italic_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Italic_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Italic_web.svg#svgFontName') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Bold';
+    src:    url('../fonts/Vulf_Mono-Bold_web.eot');
+    src:    url('../fonts/Vulf_Mono-Bold_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Bold_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Bold_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Bold_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Bold_web.svg#svgFontName') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Bold Italic';
+    src:    url('../fonts/Vulf_Mono-Bold_Italic_web.eot');
+    src:    url('../fonts/Vulf_Mono-Bold_Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Bold_Italic_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Bold_Italic_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Bold_Italic_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Bold_Italic_web.svg#svgFontName') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Black';
+    src:    url('../fonts/Vulf_Mono-Black_web.eot');
+    src:    url('../fonts/Vulf_Mono-Black_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Black_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Black_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Black_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Black_web.svg#svgFontName') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vulf Mono Black Italic';
+    src:    url('../fonts/Vulf_Mono-Black_Italic_web.eot');
+    src:    url('../fonts/Vulf_Mono-Black_Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Vulf_Mono-Black_Italic_web.woff') format('woff'),
+            url('../fonts/Vulf_Mono-Black_Italic_web.woff2') format('woff2'),
+            url('../fonts/Vulf_Mono-Black_Italic_web.ttf') format('truetype'),
+            url('../fonts/Vulf_Mono-Black_Italic_web.svg#svgFontName') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}

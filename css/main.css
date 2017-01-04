@@ -1,0 +1,289 @@
+
+
+/* ==========================================================================
+
+                          Vulfify's custom styles
+
+   ========================================================================== */
+
+body {
+  background-color: #fff;
+}
+
+.content,
+.toolbox {
+  height: 100%;
+}
+
+
+/* =========================================
+                Preview
+   ========================================= */
+
+.preview {
+  margin-top: 10px;
+}
+
+.pseudofooter {
+  text-align: center;
+  color: white;
+}
+
+.preview img {
+  display: block;
+  margin: auto;
+}
+
+.canvas-container {
+  margin: 0 auto;
+}
+
+
+/* =======================================
+              Toolbox CSS
+   ======================================= */
+/*#toolboxwrapper {
+  overflow: hidden;
+  height: 1024px;
+}
+#bottom {
+  height: 100%;
+  background-color: #D85961;
+}*/
+
+.toolbox {
+  background-color: #fff;
+  /*height: 100%;*/
+  /*padding-bottom: 100%;
+  margin-bottom: -100%;*/
+  padding-bottom: 10px;
+}
+
+/*.content {
+  overflow: hidden;
+}*/
+
+.header {
+  font-family: "Vulf Mono Black Italic", "AdobeBlank";
+  font-size: 65px;
+  color: #785B5B;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-family: "Vulf Mono Bold Italic", "AdobeBlank";
+  font-size: 24px;
+  color: #785B5B;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-family: "Vulf Mono Bold Italic", "AdobeBlank";
+  color: #785B5B;
+}
+
+.button {
+  border: 3px solid #785B5B;
+  border-radius: 6px;
+  background: transparent;
+  font-family: "Vulf Mono Bold Italic", "AdobeBlank";
+  font-size: 24px;
+  color: #785B5B;
+  letter-spacing: 0px;
+  margin:auto;
+  display:block;
+  /*margin-top: 25px;*/
+
+}
+
+#photo {
+  margin-top: 20px;
+}
+
+#photo h3 {
+  margin-top: 0px;
+}
+
+#photosquare {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 3px solid #785B5B;
+  border-radius: 6px;
+  float: right;
+  text-align: center;
+}
+
+.photo {
+  padding-right: 55px;
+}
+
+.camera {
+    margin-top: 27px;
+    color: #785B5B;
+}
+
+/* Camera Modal */
+.modal-content {
+   background-color: #D85961;
+}
+
+.modal-vulf-button {
+  background: #B62230;
+  border: 3px solid #FFFFFF;
+  border-radius: 6px;
+  font-family: HelveticaNeue-Italic;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  margin-left: 10px;
+}
+
+.modal-footer {
+  border-top: 0px;
+}
+
+/* Repeat */
+.rangewidth {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+
+
+/*Color Palette*/
+.colorcontainer {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+
+.palettebox {
+  background: inherit;
+  /*border: 0px solid #785B5B;*/
+  border-radius: 6px;
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: auto;
+}
+
+/*Palette Colors*/
+#darkblue {
+  background-color: #9CBFDC;
+}
+
+#medred {
+  background-color: #D98F84;
+}
+
+#lightblue {
+  background-color: #CADDEC;
+}
+
+#lightred {
+  background-color: #F0D3CE ;
+}
+
+#lightgrey {
+  background-color: #E0E5E7 ;
+}
+
+#darkred {
+  background-color: #D85961 ;
+}
+
+#colorrow {
+    margin-bottom: 10px;
+}
+
+
+
+/* =================================
+              Slider.css
+   ================================= */
+   input[type=range] {
+     -webkit-appearance: none;
+     width: 100%;
+     margin: 8.5px 0;
+   }
+   input[type=range]:focus {
+     outline: none;
+   }
+   input[type=range]::-webkit-slider-runnable-track {
+     width: 100%;
+     height: 2px;
+     cursor: pointer;
+     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+     background: #785b5b;
+     border-radius: 6.8px;
+     border: 0px solid #010101;
+   }
+   input[type=range]::-webkit-slider-thumb {
+     box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+     border: 0px solid #000000;
+     height: 19px;
+     width: 19px;
+     border-radius: 50px;
+     background: #d85961;
+     cursor: pointer;
+     -webkit-appearance: none;
+     margin-top: -8.5px;
+   }
+   input[type=range]:focus::-webkit-slider-runnable-track {
+     background: #7e5f5f;
+   }
+   input[type=range]::-moz-range-track {
+     width: 100%;
+     height: 2px;
+     cursor: pointer;
+     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+     background: #785b5b;
+     border-radius: 6.8px;
+     border: 0px solid #010101;
+   }
+   input[type=range]::-moz-range-thumb {
+     box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+     border: 0px solid #000000;
+     height: 19px;
+     width: 1px;
+     border-radius: 50px;
+     background: #d85961;
+     cursor: pointer;
+   }
+   input[type=range]::-ms-track {
+     width: 100%;
+     height: 2px;
+     cursor: pointer;
+     background: transparent;
+     border-color: transparent;
+     color: transparent;
+   }
+   input[type=range]::-ms-fill-lower {
+     background: #725757;
+     border: 0px solid #010101;
+     border-radius: 13.6px;
+     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+   }
+   input[type=range]::-ms-fill-upper {
+     background: #785b5b;
+     border: 0px solid #010101;
+     border-radius: 13.6px;
+     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+   }
+   input[type=range]::-ms-thumb {
+     box-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+     border: 0px solid #000000;
+     height: 19px;
+     width: 1px;
+     border-radius: 50px;
+     background: #d85961;
+     cursor: pointer;
+     height: 2px;
+   }
+   input[type=range]:focus::-ms-fill-lower {
+     background: #785b5b;
+   }
+   input[type=range]:focus::-ms-fill-upper {
+     background: #7e5f5f;
+   }
