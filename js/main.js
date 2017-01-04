@@ -3,7 +3,7 @@
 
 // color palette listeners
 
-console.log('Is main.js running?');
+// console.log('Is main.js running?');
 
 $("#darkblue").click(function() {
     // $("body").css("background-color","#9CBFDC");
@@ -49,7 +49,7 @@ var canvas = new fabric.Canvas('canvas', {
 window.onload = init;
 
 function init() {
-    console.log('test');
+    // console.log('test');
     fabric.Image.fromURL(path, function(img) {
         var x = 100;
         var img = img.scale(0.8);
@@ -70,7 +70,10 @@ var path = './img/transp_antwaun.png';
 
 //Adds image to canvas and repeats enterred amount
 function updateImages() {
+    var bckgcolor = canvas.backgroundColor;
+    // alert(bckgcolor);
     canvas.clear();
+    canvas.backgroundColor = bckgcolor;
     const imgArray = [];
     for (var i = 0; i < this.value; i++) {
         imgArray.push(path);

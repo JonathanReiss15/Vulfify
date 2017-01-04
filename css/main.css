@@ -54,6 +54,7 @@ a {
   color: #785B5B;
 }
 
+.button:hover,
 a:hover {
   color: #9CBFDC;
 }
@@ -123,7 +124,7 @@ h4 {
 }
 
 .photo {
-  padding-right: 45px;
+  padding-right: 55px;
   float: right;
 }
 
