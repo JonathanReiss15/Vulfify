@@ -64,7 +64,11 @@ function init() {
 
 const slider__value = document.querySelector("#slider");
 
+const downloadLink = document.querySelector("#downloadLnk");
+
 slider__value.addEventListener('change', updateImages);
+
+downloadLink.addEventListener('click', saveImage);
 
 var path = './img/transp_antwaun.png';
 
@@ -95,8 +99,14 @@ function updateImages() {
 
 // readd download image shit
 
-document.querySelector('#downloadLnk').addEventListener('click', function (event) {
-    var dt = canvas.toDataURL('image/jpeg');
+// document.querySelector('#downloadLnk').addEventListener('click', function (event) {
+//     console.log('save selected')
+//     var dt = canvas.toDataURL({format: 'jpeg'});
+//     this.href = dt;
+// });
+
+function saveImage() {
+    console.log('saveImage func')
+    var dt = canvas.toDataURL({format: 'jpeg'});
     this.href = dt;
-    console.log('download clicked');
-});
+}
