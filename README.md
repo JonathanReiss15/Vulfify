@@ -1,5 +1,23 @@
 # Vulfify /// go VULF yourself /// a web app
 
+## TO DO
+
+### General Things
+- [ ] auto image resizer for source images to fit canvas
+- [ ] group img objects on canvas and center
+
+### Version 1
+- [ ] add file uploads that add to canvas
+- [ ] create tutorial for masking source image
+
+### Version 2
+- [ ] webrtc integration
+- [ ] add masking for webrtc video feed
+- [ ] test random funky shapes for masking options
+
+### Version 3
+- [ ] add masking to file uploads
+
 ## Mockup
 ![1st vulfify mockup](https://github.com/JonathanReiss15/Vulfify/blob/master/DOCS/img/vulfifymockup1.png?raw=true)
 

@@ -66,7 +66,10 @@ slider__value.addEventListener('change', updateImages);
 
 downloadLink.addEventListener('click', saveImage);
 
-var path = './img/transp_antwaun.png';
+var path = './img/transp_antwaun.png'; // antwaun
+
+// var path = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
+
 
 //Adds image to canvas and repeats enterred amount
 function updateImages() {
