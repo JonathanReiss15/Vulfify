@@ -6,40 +6,36 @@
 // console.log('Is main.js running?');
 
 $("#darkblue").click(function() {
-    // $("body").css("background-color","#9CBFDC");
     canvas.backgroundColor="#9CBFDC";
     canvas.renderAll();
 });
 
 $("#medred").click(function() {
-    // $("body").css("background-color","#D98F84");
     canvas.backgroundColor="#D98F84";
     canvas.renderAll();
 });
 
 $("#lightred").click(function() {
-    // $("body").css("background-color","#F0D3CE");
     canvas.backgroundColor="#F0D3CE";
     canvas.renderAll();
 });
 
 $("#lightblue").click(function() {
-    // $("body").css("background-color","#CADDEC");
     canvas.backgroundColor="#CADDEC";
     canvas.renderAll();
 });
 
 $("#lightgrey").click(function() {
-    // $("body").css("background-color","#E0E5E7");
     canvas.backgroundColor="#E0E5E7";
     canvas.renderAll();
 });
 
 $("#darkred").click(function() {
-    // $("body").css("background-color","#D85961");
     canvas.backgroundColor="#D85961";
     canvas.renderAll();
 });
+
+// Canvas
 
 var canvas = new fabric.Canvas('canvas', {
   backgroundColor: '#D98F84',
@@ -51,7 +47,7 @@ window.onload = init;
 function init() {
     // console.log('test');
     fabric.Image.fromURL(path, function(img) {
-        var x = 100;
+        var x = 60;
         var img = img.scale(0.8);
         img.set("left", x);
         // alert("X value is" + x);
@@ -85,7 +81,7 @@ function updateImages() {
 
     imgArray.forEach((image, index) => {
         fabric.Image.fromURL(image, function(img) {
-            var x = 100 + (15 * index);
+            var x = 60 + (15 * index);
             console.log("index value is: " + index);
             var img = img.scale(0.8);
             img.set("left", x);
@@ -96,14 +92,6 @@ function updateImages() {
         });
     });
 }
-
-// readd download image shit
-
-// document.querySelector('#downloadLnk').addEventListener('click', function (event) {
-//     console.log('save selected')
-//     var dt = canvas.toDataURL({format: 'jpeg'});
-//     this.href = dt;
-// });
 
 function saveImage() {
     console.log('saveImage func')
