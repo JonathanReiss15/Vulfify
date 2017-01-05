@@ -20,7 +20,7 @@
 
 ## Mockups
 ### New Mockup feat. Vulf Mono (s/o to James @ OH no)
-![vulf mono vulfify mockup](https://github.com/JonathanReiss15/Vulfify/blob/master/DOCS/img/vulfmonomockup.png?raw=true))
+![vulf mono vulfify mockup](https://github.com/JonathanReiss15/Vulfify/blob/master/DOCS/img/vulfmonomockup.png?raw=true)
 
 ### Original Design
 ![1st vulfify mockup](https://github.com/JonathanReiss15/Vulfify/blob/master/DOCS/img/vulfifymockup1.png?raw=true)
