@@ -1,4 +1,5 @@
-# Vulfify /// go VULF yourself /// a web app (domain: Vulfify.Me)
+# Vulfify /// go VULF yourself /// a web app
+## www.Vulfify.Me
 
 ## TO DO
 
