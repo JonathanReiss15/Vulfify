@@ -51,13 +51,17 @@ body {
   height: 100%;
   background-color: #D85961;
 }*/
-a {
-  color: #785B5B;
+a:link {
+  color:#CE2029; text-decoration:none;}
+
+a:visited {
+  color:#CE2029;
+  text-decoration:none;
 }
 
-.button:hover,
+button:hover,
 a:hover {
-  color: #9CBFDC;
+  text-decoration: underline;
 }
 
 

@@ -52,8 +52,10 @@ function init() {
         img.set("left", x);
         // alert("X value is" + x);
         img.set("top", 100);
-        img.selectable = false;
+        img.selectable = true;
         canvas.add(img);
+        groupImages();
+
     });
 }
 
@@ -90,19 +92,31 @@ function updateImages() {
             img.set("left", x);
             // alert("X value is" + x);
             img.set("top", 100);
-            img.selectable = false;
+            img.selectable = true;
             canvas.add(img);
+            groupImages();
         });
     });
-    // var group = new fabric.Group(canvas.getObjects()); //  remove
-    // canvas.add(group);
-    // canvas.centerObject(group);
-    // alert('ran');
-    // canvas.renderAll();
 }
 
 function saveImage() {
     console.log('saveImage func')
     var dt = canvas.toDataURL({format: 'jpeg'});
     this.href = dt;
+}
+
+function groupImages() {
+    canvas.deactivateAll();
+    var objs = canvas.getObjects().map(function(o) {
+      return o.set('active', true);
+    });
+
+    var group = new fabric.Group(objs, {
+      originX: 'center',
+      originY: 'center'
+    });
+
+    canvas.setActiveGroup(group.setCoords()).renderAll();
+    group.center();
+    group.setCoords();
 }
