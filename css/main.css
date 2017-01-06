@@ -37,11 +37,11 @@ body {
   margin: 0 auto;
 }
 
-
 /* =======================================
               Toolbox CSS
    ======================================= */
 
+a h3,
 a:link {
   color:#CE2029; text-decoration:none;}
 
