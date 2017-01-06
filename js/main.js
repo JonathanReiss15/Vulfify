@@ -1,4 +1,3 @@
-
 // jquery to change background-color of page on click
 
 // color palette listeners
@@ -119,4 +118,27 @@ function groupImages() {
     canvas.setActiveGroup(group.setCoords()).renderAll();
     group.center();
     group.setCoords();
+}
+
+document.getElementById('fileID').onchange = function handleImage(e) {
+    var reader = new FileReader();
+    reader.onload = function (event) { console.log('onload');
+        var imgObj = new Image();
+        imgObj.src = event.target.result;
+        imgObj.onload = function () {
+            // start fabricJS stuff
+
+            var image = new fabric.Image(imgObj);
+            image.set({
+                left: 250,
+                top: 250,
+                angle: 0,
+            });
+            canvas.add(image);
+
+            // end fabricJS stuff
+        }
+
+    }
+    reader.readAsDataURL(e.target.files[0]);
 }
