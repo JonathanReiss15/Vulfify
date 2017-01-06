@@ -66,7 +66,7 @@ slider__value.addEventListener('change', updateImages);
 
 downloadLink.addEventListener('click', saveImage);
 
-var path = './img/transp_antwaun.png'; // antwaun
+const path = './img/transp_antwaun.png'; // antwaun
 
 // var path = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
 
@@ -94,6 +94,11 @@ function updateImages() {
             canvas.add(img);
         });
     });
+    // var group = new fabric.Group(canvas.getObjects()); //  remove
+    // canvas.add(group);
+    // canvas.centerObject(group);
+    // alert('ran');
+    // canvas.renderAll();
 }
 
 function saveImage() {
