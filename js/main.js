@@ -79,7 +79,7 @@ function updateImages() {
     canvas.clear();
     canvas.backgroundColor = bckgcolor;
     const imgArray = [];
-    for (var i = 0; i < this.value; i++) {
+    for (var i = 0; i < slider__value.value; i++) {
         imgArray.push(path);
     }
 
