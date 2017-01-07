@@ -67,7 +67,8 @@ slider__value.addEventListener('change', updateImages);
 
 downloadLink.addEventListener('click', saveImage);
 
-const path = './img/transp_antwaun.png'; // antwaun
+const antwaun = './img/transp_antwaun.png'; 
+let path = antwaun; // antwaun
 
 // var path = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
 
@@ -125,20 +126,9 @@ document.getElementById('fileID').onchange = function handleImage(e) {
     reader.onload = function (event) { console.log('onload');
         var imgObj = new Image();
         imgObj.src = event.target.result;
-        imgObj.onload = function () {
-            // start fabricJS stuff
 
-            var image = new fabric.Image(imgObj);
-            image.set({
-                left: 250,
-                top: 250,
-                angle: 0,
-            });
-            canvas.add(image);
-
-            // end fabricJS stuff
-        }
-
+        path = imgObj.src;
+        updateImages();
     }
     reader.readAsDataURL(e.target.files[0]);
 }
