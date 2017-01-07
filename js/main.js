@@ -49,10 +49,16 @@ function init() {
         var x = 60;
         var img = img.scale(0.8);
         img.set("left", x);
-        // alert("X value is" + x);
         img.set("top", 100);
         img.selectable = true;
         canvas.add(img);
+
+        var filter = new fabric.Image.filters.Noise({
+          noise: 5000
+        });
+        img.filters.push(filter);
+        img.applyFilters(canvas.renderAll.bind(canvas));
+
         groupImages();
 
     });
@@ -68,9 +74,11 @@ slider__value.addEventListener('change', updateImages);
 downloadLink.addEventListener('click', saveImage);
 
 const antwaun = './img/transp_antwaun.png';
-let path = antwaun; // antwaun
+const bernard = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
+const jonny = './img/jonny.png';
 
-// var path = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
+let path = antwaun; // antwaun or bernard
+
 
 
 //Adds image to canvas and repeats enterred amount
@@ -89,9 +97,9 @@ function updateImages() {
             console.log("index value is: " + index);
             var img = img.scale(0.8);
             img.set("left", x);
-            // alert("X value is" + x);
             img.set("top", 100);
             img.selectable = true;
+            img.lockUniScaling = true;
             canvas.add(img);
             groupImages();
         });
@@ -112,11 +120,12 @@ function groupImages() {
 
     var group = new fabric.Group(objs, {
       originX: 'center',
-      originY: 'center'
+      originY: 'center',
+      borderColor: 'white',
+      cornerColor: 'white',
     });
-
+    group.lockUniScaling = true;
     canvas.setActiveGroup(group.setCoords()).renderAll();
-    group.center();
     group.setCoords();
 }
 
