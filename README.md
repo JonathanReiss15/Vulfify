@@ -6,7 +6,8 @@
 ### General Things
 - [x] ~~auto image resizer for source images to fit canvas~~ (resize through group instead)
 - [x] group img objects on canvas and ~~center~~ (manually drag to position by user)
-- [ ] add file uploads that add to canvas
+- [x] add file uploads that add to canvas
+- [ ] fix positioning bug ( goes to original position when repeat changes)
 
 ### Version 1
 - [x] ~~create tutorial for masking source image~~
