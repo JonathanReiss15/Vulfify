@@ -67,7 +67,7 @@ slider__value.addEventListener('change', updateImages);
 
 downloadLink.addEventListener('click', saveImage);
 
-const antwaun = './img/transp_antwaun.png'; 
+const antwaun = './img/transp_antwaun.png';
 let path = antwaun; // antwaun
 
 // var path = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
@@ -76,7 +76,6 @@ let path = antwaun; // antwaun
 //Adds image to canvas and repeats enterred amount
 function updateImages() {
     var bckgcolor = canvas.backgroundColor;
-    // alert(bckgcolor);
     canvas.clear();
     canvas.backgroundColor = bckgcolor;
     const imgArray = [];
