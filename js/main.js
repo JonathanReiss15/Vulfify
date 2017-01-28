@@ -76,7 +76,7 @@ const antwaun = './img/transp_antwaun.png'; // Antwaun in the building
 const bernard = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
 const jonny = './img/jonny.png'; // Jonny
 
-let path = jonny; // set default image
+let path = bernard; // set default image
 
 
 
@@ -163,7 +163,9 @@ function autoResize(img) {
 
 function addFilter(img) {
   // add filter
-  img.filters.push(new fabric.Image.filters.Grayscale());
+  img.filters.push(new fabric.Image.filters.Noise({
+    noise: 60
+  }));
 
   // apply filters and re-render canvas when done
   img.applyFilters(canvas.renderAll.bind(canvas));
