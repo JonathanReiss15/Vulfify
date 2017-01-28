@@ -92,8 +92,11 @@ https://github.com/JonathanReiss15/Vulfify
                 <div id="photosquare">
                   <a href="#cameraModal" class="camera" data-toggle="modal">
                     <div class="camera">
-                      <a href="#" onclick="document.getElementById('fileID').click(); return false;" /><i class="fa fa-camera fa-3x" aria-hidden="true"></i></a>
-<input type="file" id="fileID" style="visibility: hidden;" />
+                      <!-- <a data-toggle"modal" href="#cameraModal"> -->
+                        <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
+                      <!-- </a> -->
+                      <!-- <a href="#" onclick="document.getElementById('fileID').click(); return false;" /><i class="fa fa-camera fa-3x" aria-hidden="true"></i></a>
+<input type="file" id="fileID" style="visibility: hidden;" /> -->
                     </div>
                   </a>
                 </div>
@@ -105,19 +108,19 @@ https://github.com/JonathanReiss15/Vulfify
           <div id="cameraModal" class="modal fade">
                   <div class="modal-dialog">
                       <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                              <h3>Take your picture</h3>
-                          </div>
-                          <!-- <div class="modal-body">
-                            <video autoplay></video>
-                          	<canvas></canvas><br>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>add your picture</h3>
+                          <canvas id="mask"></canvas>
 
-                          </div> -->
-                          <input type="file">
-                          <div class="modal-footer">
-                              <button type="button" class="modal-vulf-button" data-dismiss="modal">Close</button>
-                              <button id="capture" type="button" class="modal-vulf-button" data-dismiss="modal">Vulfify ME ///</button>
+                          <!-- <input type="file"> -->
+                          <div class="modalbuttongroup">
+                              <a href="#" onclick="document.getElementById('fileID').click(); return false;" />
+                                <h3>upload</h3>
+                              </a>
+                              <input type="file" id="fileID" style="visibility: hidden;" />
+
+                              <a href=""><h3>vulfify</h3></a>
+                              <!-- <button id="capture" type="button" class="modal-vulf-button" data-dismiss="modal">Vulfify ME ///</button> -->
                           </div>
                       </div>
                   </div>

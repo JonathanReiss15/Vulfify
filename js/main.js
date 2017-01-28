@@ -51,12 +51,11 @@ function init() {
         // set options
         img.selectable = true;
         img.borderColor = 'white';
-        // img.crossOrigin = "Anonymous";
 
+        // adds filter + adds to canvas
         addFilter(img);
 
         // add to canvas and group
-        // canvas.add(img);
         groupImages();
 
         // console.log("left position: " + img.getLeft());
@@ -109,13 +108,11 @@ function updateImages() {
             img.lockUniScaling = true;
             img.borderColor = 'white';
 
+            // adds filter + adds to canvas
             addFilter(img);
 
-            // add to canvas and group
-            // canvas.add(img);
             groupImages();
 
-            // console.log("img"+ (index + 1) + " position: " + img.getLeft());
         });
     });
 }
@@ -173,3 +170,9 @@ function addFilter(img) {
 
   canvas.add(img);
 }
+
+/*
+=========================
+        Mask JS
+=========================
+*/

@@ -117,7 +117,12 @@ h4 {
 
 /* Camera Modal */
 .modal-content {
-   background-color: #D85961;
+   background-color: white;
+   padding: 10px;
+}
+
+.modalbuttongroup  {
+  display: inline-flex;
 }
 
 .modal-vulf-button {
