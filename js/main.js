@@ -53,14 +53,10 @@ function init() {
         img.borderColor = 'white';
         // img.crossOrigin = "Anonymous";
 
-        // // add filter
-        // img.filters.push(new fabric.Image.filters.Grayscale());
-        //
-        // // apply filters and re-render canvas when done
-        // img.applyFilters(canvas.renderAll.bind(canvas));
+        addFilter(img);
 
         // add to canvas and group
-        canvas.add(img);
+        // canvas.add(img);
         groupImages();
 
         // console.log("left position: " + img.getLeft());
@@ -80,7 +76,7 @@ const antwaun = './img/transp_antwaun.png'; // Antwaun in the building
 const bernard = './img/prettypurdie500.png'; // Bernard 'Pretty' Purdie
 const jonny = './img/jonny.png'; // Jonny
 
-let path = antwaun; // set default image
+let path = jonny; // set default image
 
 
 
@@ -113,8 +109,10 @@ function updateImages() {
             img.lockUniScaling = true;
             img.borderColor = 'white';
 
+            addFilter(img);
+
             // add to canvas and group
-            canvas.add(img);
+            // canvas.add(img);
             groupImages();
 
             // console.log("img"+ (index + 1) + " position: " + img.getLeft());
@@ -161,4 +159,15 @@ function autoResize(img) {
   } else if (img.width > 350){
     img.scaleToWidth(350)
   }
+}
+
+function addFilter(img) {
+  // add filter
+  img.filters.push(new fabric.Image.filters.Grayscale());
+
+  // apply filters and re-render canvas when done
+  img.applyFilters(canvas.renderAll.bind(canvas));
+  // alert('ran');
+
+  canvas.add(img);
 }
